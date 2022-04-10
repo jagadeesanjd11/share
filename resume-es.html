@@ -3,6 +3,9 @@
 <head>
 <title>Resume</title>
 <style>
+hr{
+    margin-top: -12px;
+}
 .header {
     width: 100%;
     background: #383c48;
@@ -14,6 +17,9 @@
 }
 .header a {
     color: white;
+}
+.body{
+    width: 100%;
 }
 .body td {
     padding-left: 20px;
@@ -47,6 +53,26 @@ html,body {
 }
 .table tr:nth-child(odd) {
   background-color: #dddddd;
+}
+.level {
+    display: flex;
+    padding: 4px;
+}
+.level .item{
+    width: 15px;
+    border: 1px solid #d5d5d5;
+    height: 15px;
+    background-color: #d5d5d5;
+}
+.level .space {
+    width: 4px;
+}
+.level .item.active {
+    background-color: #383c48;
+    border: 1px solid #383c48;
+}
+.review .note{
+    padding-left: 4px;
 }
 page{
     width: 210mm;
@@ -84,7 +110,7 @@ page{
     <table class="header">
     <tbody>
     <tr>
-        <td style="width: 55%;">
+        <td style="width: 55%;padding-bottom: 0px;">
             <span style="font-size: 30px;font-weight: 400;">Jagadeesan S</span><br>
             <span style="font-size: 21px;font-weight: 400;">Full Stack Developer (Angular)</span><br>
             <br>
@@ -101,103 +127,497 @@ page{
         </td>
     </tr>
     <tr>
-        <td colspan="2" style="width: 100%;">
+        <td colspan="2" style="width: 100%;padding-top: 0px;">
             <b>LinkedIn</b> <a style="text-decoration: none;" href="https://www.linkedin.com/in/jagadeesan-s-7400b91a1/">https://www.linkedin.com/in/jagadeesan-s-7400b91a1</a>
         </td>
     </tr>
     </tbody>
     </table>
     <!--body-->
-    
     <table class="body">
         <tbody>
             <tr>
                 <td>
-                    <h3>Objective</h3>
-                    To utilize my knowledge, skills and attitude towards the growth of the organization.
+                    <h3>About Me</h3>
+                    <hr/>
+                    I  <span style="font-size: 18px;color: red;">&#10084;&#65039;</span> computer programming. It started in my school life. I can quickly learn new technology. I have deep knowledge of programming and system processes. I have 5+ experience, I am trying to learn new things every day.
                 </td>
             </tr>
-            <tr>
+            <!--<tr>
                 <td>
                     <h3>Personal skill</h3>
                     Comprehensive problem solving abilities, good verbal and understanding skills ability to learn.
                 </td>
-            </tr>
-            
-            
+            </tr>-->
         </tbody>
     </table>
-    <table class="body">
+    <table class="body" style="width: 100%;">
         <tbody>
         <tr>
-            <td colspan="2"><h3>Technical skills</h3></td>
+            <td colspan="2"><h3>Technical skills</h3><hr/></td>
         </tr>
         <tr>
-            <td>Framework</td>
-            <td>: Angular, NestJS, Bootstrap, jQuery, AngularJS, Wordpress, Codeigniter, Spring Boot.</td>
+            <td style="width: 70%;">Angular, NestJS, jQuery, AngularJS, Codeigniter, Bootstrap</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item"> </div>
+                    </div>
+                    <div class="note">Very Good</div>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Web Development</td>
-            <td>: JavaScript, TypeScript, Node.js, HTML, CSS, PostgreSQL, MySQL, MSSQL, PHP, JSP.</td>
+            <td>JavaScript, TypeScript, Node.js, HTML, CSS, PHP, PostgreSQL, MySQL, MSSQL</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                    </div>
+                    <div class="note">Excellent</div>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Programming Languages</td>
-            <td>: Java, C++, C, Python.</td>
+            <td>Java, Spring Boot, C++, C, Python</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item"> </div>
+                        <span class="space"> </span>
+                        <div class="item"> </div>
+                    </div>
+                    <div class="note">Good</div>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Operating System</td>
-            <td>: Linux, Windows.</td>
+            <td>Linux, Windows, Git</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                    </div>
+                    <div class="note">Excellent</div>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Typewriting</td>
-            <td>: English.</td>
+            <td>Logical thinking, Efficient coding, Programming concepts</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                    </div>
+                    <div class="note">Excellent</div>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>AREAS OF INTEREST</td>
-            <td>: Software Development, Embedded system (IoT), Electronics.</td>
+            <td>MS Office, Adobe Photoshop, Adobe Illustrator, Adobe Animate, Sony Vegas</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item"> </div>
+                    </div>
+                    <div class="note">Very Good</div>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Additional Skills</td>
-            <td>: IoT, Cyber security and System Administration.</td>
-        </tr>
-        <tr>
-            <td>Software</td>
-            <td>: MS Office, Adobe Photoshop, Adobe Illustrator, Adobe Animate, Sony Vegas.</td>
+            <td colspan="2">
+                <p>
+                <b>Additional Skills:-</b><br>
+                Embedded system (IoT), Electronics, Cyber security and System Administration.
+                </p>
+            </td>
+            
         </tr>
         </tbody>
     </table>
     <table class="body">
         <tr>
             <td>
-                <h3>Experience (5 Years 5 Months)</h3>
+                <h3>Total Experience (5 Years 5 Months)</h3><hr/>
                 <p>
                     <b>09 August 2021 - Present</b><br>
-                    Software Developer | Theecode Technologies Pvt Ltd. | Chennai<br>
-                    It is a Finance Software Development Company. <br>For info: <a href="https://www.theecode.xyz/">https://www.theecode.xyz</a><br>
+                    Software Developer<br>
+                    Theecode Technologies Pvt Ltd, Chennai, Tamil Nadu<br>
+                    <a href="https://www.theecode.xyz/">https://www.theecode.xyz</a><br>
                 </p>
                 <p>
                     <b>20 August 2018 - 11 Jun 2021 (2 years 11 months)</b><br>
-                    Web Developer | White House Business Solutions Pvt Ltd. | Chennai<br>
-                    It is a E-learning and ERP Software Development Company. <br>For info: <a href="http://www.whitehouseit.com">http://www.whitehouseit.com</a><br>
+                    Web Developer<br>
+                    White House Business Solutions Pvt Ltd, Chennai, Tamil Nadu<br>
+                    <a href="http://www.whitehouseit.com">http://www.whitehouseit.com</a><br>
                 </p>
                 <p>
                     <b>16 June 2017 - 18 August 2018 (1 year 4 months)</b><br>
-                    Web Developer | Optimista Technologies | Chennai.<br>
-                    It is a web Development Company. <br>For info: <a href="http://optimista.co.in">http://optimista.co.in</a><br>
+                    Web Developer<br>
+                    Optimista Technologies, Chennai, Tamil Nadu<br>
+                    <a href="http://optimista.co.in">http://optimista.co.in</a><br>
                 </p>
                 <p>
                     <b>14 November 2016 - 15 June 2017 (6 months)</b><br>
-                    Graphics designer | Optimista Technologies | Chennai.<br>
-                    It is a web Development Company. <br>For info: <a href="http://optimista.co.in">http://optimista.co.in</a><br>
+                    Graphics designer<br>
+                    Optimista Technologies, Chennai, Tamil Nadu<br>
+                    <a href="http://optimista.co.in">http://optimista.co.in</a><br>
                 </p>
             </td>
         </tr>
     </table>
     <br><br>
+    
+    <br>
+</page>
+<!--page2-->
+<!--page3-->
+<page>
+    <table class="body">
+    <tbody>
+        <tr>
+            <td colspan="3"><h3>Projects</h3><hr/></td>
+        </tr>
+
+        <tr>
+            <td>1)</td>
+            <td>Project name</td>
+            <td>: Alchemy express (v0.1)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>URL</td>
+            <td>: <a href="https://alchemyexpress.alchemylms.com/">https://alchemyexpress.alchemylms.com</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Description</td>
+            <td>: Alchemy express is a Saas (Software as a service) product for Loan origination systems and loan management systems Software.
+                This wizard helps a user can able to create their loan finance software within 5 mins and it's also hosted that software on the server within 2 mins.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Technologies</td>
+            <td>: Node.js, Angular, NestJS, TypeScript, JavaScript, PostgreSQL, HTML, CSS and Bootstrap.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Company</td>
+            <td>: Theecode Technologies</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Role</td>
+            <td>: Team Lead & Full Stack Developer (Angular & NestJS)</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td>Team Member</td>
+            <td>: Jagadeesan(TL), Sathish Palani, Animesh Kumar, Mohideen</td>
+        </tr>-->
+        <tr><td colspan="3"><br></td></tr>
+
+        <tr>
+            <td>2)</td>
+            <td>Project name</td>
+            <td>: Business Warrior</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>URL</td>
+            <td>: <a href="https://funding.businesswarrior.com/">https://funding.businesswarrior.com</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Description</td>
+            <td>: It is a loan origination system and loan management system software for business people. Collect user details and analyze user bank information and credit scores shown all information in the admin dashboard. It has a fund release and loan management system. We also provide a user dashboard, it helps them control their loan application.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Technologies</td>
+            <td>: Node.js, Angular, NestJS, TypeScript, JavaScript, PostgreSQL, HTML, CSS and Bootstrap.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Company</td>
+            <td>: Theecode Technologies</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Role</td>
+            <td>: Full Stack Developer (Angular & NestJS)</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td>Team Member</td>
+            <td>: Mohideen(TL), Sathish Palani, Jagadeesan, Jayapriya</td>
+        </tr>-->
+        <tr><td colspan="3"><br></td></tr>
+
+
+        <tr>
+            <td>3)</td>
+            <td>Project name</td>
+            <td>: Ito - I am the one (Browser extension)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Firefox</td>
+            <td>: <a href="https://addons.mozilla.org/en-US/firefox/addon/ito-i-am-the-one">https://addons.mozilla.org/en-US/firefox/addon/ito-i-am-the-one</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Chrome</td>
+            <td>: <a href="https://chrome.google.com/webstore/detail/ito-i-am-the-one/joijhdcigeikbohmciiolinckblidjim">https://chrome.google.com/webstore/detail/ito-i-am-the-one/joijhdcigeikbohmciiolinckblidjim</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Description</td>
+            <td>: This tool uses to inject your Javascript coding into any website, like a browser console. You can save code and run it any time. It also uses to create your program as a tool.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Technologies</td>
+            <td>: JavaScript, CSS, HTML</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td>Developer info</td>
+            <td>: Jagadeesan.</td>
+        </tr>-->
+        <tr>
+            <td></td>
+            <td>Role</td>
+            <td>: Full Stack Developer</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Note</td>
+            <td>: Me and my friends together create more inventive projects. Kindly visit here <a href="https://minisuperfiles.blogspot.com">https://minisuperfiles.blogspot.com</a></td>
+        </tr>
+        <tr><td colspan="3"><br></td></tr>
+        <tr>
+            <td>4)</td>
+            <td>Project name</td>
+            <td>: Smart Books (v6.0 to v8.0 current)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>URL</td>
+            <td>: NIL (It's internal software (MAN) not available online)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Description</td>
+            <td>: It's big ERP software and a large database, it has 3000 above tables. The company produces T-shirts and dresses like the Adidas company. It's used to save income, outgoing materials details, and generate reports, QRcode shicker, invoices, and more. Cloth (Fabric) cutting calculation and machine control service.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Technologies</td>
+            <td>: PHP, Codeigniter, MSSQL, JavaScript, AngularJS, jQuery, HTML, CSS and Bootstrap.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Company</td>
+            <td>: White House Business Solutions</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Role</td>
+            <td>: Full Stack Developer (JavaScript & PHP)</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td>Team Member</td>
+            <td>: Selva Kumar(TL), Jagadeesan, Thangamani, Durga, Mohideen, Ranjith, Bhanu, Adaikalaraj</td>
+        </tr>-->
+        <tr><td colspan="3"><br><br><br><br><br><br><br><br><br></td></tr>
+        <tr>
+            <td>5)</td>
+            <td>Project name</td>
+            <td>: Dynamic Report</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>URL</td>
+            <td>: NIL (It's internal software (MAN) not available online)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Description</td>
+            <td>: It is a report generating software. level of user-based access to create report pdf. Admin user can access to database create modules, user can add a chart, image, calculation, function logic, table cell design, template apply export pdf page size, fonts, contents, save settings then download pdf and excel</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Technologies</td>
+            <td>: Core PHP, Python, Codeigniter API service, MSSQL, JavaScript, jQuery, JsPDF, wkhtmltopdf software, handsontable, HTML, CSS and Bootstrap.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Company</td>
+            <td>: White House Business Solutions</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Role</td>
+            <td>: Full Stack Developer (JavaScript & PHP)</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td>Team Member</td>
+            <td>: Jagadeesan, Thangamani, Durga</td>
+        </tr>-->
+        
+    </tbody>
+    </table>
+</page>
+<page>
+    <br>
+    <table class="body">
+    <tbody>
+        <tr>
+            <td>6)</td>
+            <td>Project name</td>
+            <td>: Meshed minds creative</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>URL</td>
+            <td>: <a href="http://meshedmindscreative.com">http://meshedmindscreative.com</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Description</td>
+            <td>:  It is YouTube paid private video-based site and easy signup with google accounts (google account API).  User management and video management control panel (dashboard).</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Technologies</td>
+            <td>: jQuery, PHP, MySQL, Google API</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Company</td>
+            <td>: Optimista Technologies</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Role</td>
+            <td>: Full Stack Developer (JavaScript & PHP)</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td>Team Member</td>
+            <td>: Jagadeesan, Ponmozhi</td>
+        </tr>-->
+        <tr><td colspan="3"><br></td></tr>
+        <tr>
+            <td>7)</td>
+            <td>Project name</td>
+            <td>: WINMIN e POWER SYSTEMS</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>URL</td>
+            <td>: <a href="https://winmin.in/">https://winmin.in/</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Description</td>
+            <td>: It's an E-commerce website with a payment gateways system (Payu API)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Technologies</td>
+            <td>: Wordpress</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Company</td>
+            <td>: Optimista Technologies</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Role</td>
+            <td>: Wordpress Developer</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td>Team Member</td>
+            <td>: Suganiya, Jagadeesan</td>
+        </tr>-->
+        <!--<tr>
+            <td colspan="3">
+                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br>
+                <h3>Declaration</h3>
+                I hereby I declared all statements true and I did with my knowledge.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><br><br>Date: <br>Place:</td>
+            <td style="text-align: center"><br><br><br>Signature</td>
+        </tr>-->
+    </tbody>
+    </table>
+</page>
+<page>
+    <br><br>
     <table class="body">
         <tr>
             <td>
-                <h3>Education</h3>
+                <h3>Education</h3><hr/>
                 <table class="table">
                     <thead>
                     <tr>
@@ -236,12 +656,9 @@ page{
         </tr>
     </table>
     <br>
-</page>
-<!--page2-->
-<page>
-    <table class="body">
+    <table class="body" style="width: 100%;">
         <tbody>
-        <tr>
+        <!--<tr>
             <td colspan="2"><h3>Personal Details</h3></td>
         </tr>
         <tr>
@@ -279,243 +696,49 @@ page{
         <tr>
             <td>ADDRESS</td>
             <td>: 38 Vinayagar kovil street, Arakandanallur,<br>Thirukoilure, Villupuram - 605752.</td>
-        </tr>
-        <tr>
-            <td colspan="2"><h3>Language Knows</h3></td>
-        </tr>
-        <tr><td colspan="2">Tamil and English</td></tr>
-        </tbody>
-    </table>
-</page>
-<!--page3-->
-<page>
-    <br>
-    <table class="body">
-    <tbody>
-        <tr>
-            <td colspan="3"><h3>Projects List</h3></td>
-        </tr>
-
-        <tr>
-            <td>1)</td>
-            <td>Project name</td>
-            <td>: Alchemy express (v0.1)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>URL</td>
-            <td>: <a href="https://alchemyexpress.alchemylms.com/">https://alchemyexpress.alchemylms.com</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Description</td>
-            <td>: Alchemy express is a Saas (Software as a service) product for Loan origination systems and loan management systems Software.
-                This wizard helps a user can able to create their loan finance software within 5 mins and it's also hosted that software on the server within 2 mins.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Technologies</td>
-            <td>: Node.js, Angular, NestJS, TypeScript, JavaScript, PostgreSQL, HTML, CSS and Bootstrap.</td>
-        </tr>
-        <!--<tr>
-            <td></td>
-            <td>Team Member</td>
-            <td>: Jagadeesan(TL), Sathish Palani, Animesh Kumar, Mohideen</td>
-        </tr>-->
-        <tr><td colspan="3"><br></td></tr>
-
-        <tr>
-            <td>2)</td>
-            <td>Project name</td>
-            <td>: Business Warrior</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>URL</td>
-            <td>: <a href="https://funding.businesswarrior.com/">https://funding.businesswarrior.com</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Description</td>
-            <td>: It is a loan origination system and loan management system software for business people. Collect user details and analyze user bank information and credit scores shown all information in the admin dashboard. It has a fund release and loan management system. We also provide a user dashboard, it helps them control their loan application.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Technologies</td>
-            <td>: Node.js, Angular, NestJS, TypeScript, JavaScript, PostgreSQL, HTML, CSS and Bootstrap.</td>
-        </tr>
-        <!--<tr>
-            <td></td>
-            <td>Team Member</td>
-            <td>: Mohideen(TL), Sathish Palani, Jagadeesan, Jayapriya</td>
-        </tr>-->
-        <tr><td colspan="3"><br><br><br><br></td></tr>
-
-
-        <tr>
-            <td>3)</td>
-            <td>Project name</td>
-            <td>: Ito - I am the one (Browser extension)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Firefox</td>
-            <td>: <a href="https://addons.mozilla.org/en-US/firefox/addon/ito-i-am-the-one">https://addons.mozilla.org/en-US/firefox/addon/ito-i-am-the-one</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Chrome</td>
-            <td>: <a href="https://chrome.google.com/webstore/detail/ito-i-am-the-one/joijhdcigeikbohmciiolinckblidjim">https://chrome.google.com/webstore/detail/ito-i-am-the-one/joijhdcigeikbohmciiolinckblidjim</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Description</td>
-            <td>: This tool uses to inject your Javascript coding into any website, like a browser console. You can save code and run it any time. It also uses to create your program as a tool.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Technologies</td>
-            <td>: JavaScript, CSS, HTML</td>
-        </tr>
-        <!--<tr>
-            <td></td>
-            <td>Developer info</td>
-            <td>: Jagadeesan.</td>
         </tr>-->
         <tr>
-            <td></td>
-            <td>Note</td>
-            <td>: Me and my friends together create more inventive projects. Kindly visit here <a href="https://minisuperfiles.blogspot.com">https://minisuperfiles.blogspot.com</a></td>
-        </tr>
-        <tr><td colspan="3"><br></td></tr>
-        <tr>
-            <td>4)</td>
-            <td>Project name</td>
-            <td>: Smart Books (v6.0 to v8.0 current)</td>
+            <td colspan="2"><h3>Languages</h3><hr/></td>
         </tr>
         <tr>
-            <td></td>
-            <td>URL</td>
-            <td>: NIL (It's internal software (MAN) not available online)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Description</td>
-            <td>: It's big ERP software and a large database, it has 3000 above tables. The company produces T-shirts and dresses like the Adidas company. It's used to save income, outgoing materials details, and generate reports, QRcode shicker, invoices, and more. Cloth (Fabric) cutting calculation and machine control service.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Technologies</td>
-            <td>: PHP, Codeigniter, MSSQL, JavaScript, AngularJS, jQuery, HTML, CSS and Bootstrap.</td>
-        </tr>
-        <!--<tr>
-            <td></td>
-            <td>Team Member</td>
-            <td>: Selva Kumar(TL), Jagadeesan, Thangamani, Durga, Mohideen, Ranjith, Bhanu, Adaikalaraj</td>
-        </tr>-->
-        <tr><td colspan="3"><br></td></tr>
-        <tr>
-            <td>5)</td>
-            <td>Project name</td>
-            <td>: Dynamic Report</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>URL</td>
-            <td>: NIL (It's internal software (MAN) not available online)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Description</td>
-            <td>: It is a report generating software. level of user-based access to create report pdf. Admin user can access to database create modules, user can add a chart, image, calculation, function logic, table cell design, template apply export pdf page size, fonts, contents, save settings then download pdf and excel</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Technologies</td>
-            <td>: Core PHP, Python, Codeigniter API service, MSSQL, JavaScript, jQuery, JsPDF, wkhtmltopdf software, handsontable, HTML, CSS and Bootstrap.</td>
-        </tr>
-        <!--<tr>
-            <td></td>
-            <td>Team Member</td>
-            <td>: Jagadeesan, Thangamani, Durga</td>
-        </tr>-->
-        
-    </tbody>
-    </table>
-</page>
-<page>
-    <br>
-    <table class="body">
-    <tbody>
-        <tr>
-            <td>6)</td>
-            <td>Project name</td>
-            <td>: Meshed minds creative</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>URL</td>
-            <td>: <a href="http://meshedmindscreative.com">http://meshedmindscreative.com</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Description</td>
-            <td>:  It is YouTube paid private video-based site and easy signup with google accounts (google account API).  User management and video management control panel (dashboard).</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Technologies</td>
-            <td>: jQuery, PHP, MySQL, Google API</td>
-        </tr>
-        <!--<tr>
-            <td></td>
-            <td>Team Member</td>
-            <td>: Jagadeesan, Ponmozhi</td>
-        </tr>-->
-        <tr><td colspan="3"><br></td></tr>
-        <tr>
-            <td>7)</td>
-            <td>Project name</td>
-            <td>: WINMIN e POWER SYSTEMS</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>URL</td>
-            <td>: <a href="https://winmin.in/">https://winmin.in/</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Description</td>
-            <td>: It's an E-commerce website with a payment gateways system (Payu API)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Technologies</td>
-            <td>: Wordpress</td>
-        </tr>
-        <!--<tr>
-            <td></td>
-            <td>Team Member</td>
-            <td>: Suganiya, Jagadeesan</td>
-        </tr>-->
-        <!--<tr>
-            <td colspan="3">
-                <br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br>
-                <h3>Declaration</h3>
-                I hereby I declared all statements true and I did with my knowledge.
+            <td style="width:70%">Tamil</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                    </div>
+                    <div class="note">Excellent</div>
+                </div>
             </td>
         </tr>
         <tr>
-            <td colspan="2"><br><br>Date: <br>Place:</td>
-            <td style="text-align: center"><br><br><br>Signature</td>
-        </tr>-->
-    </tbody>
+            <td style="width:70%">English</td>
+            <td>
+                <div class="review">
+                    <div class="level">
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item active"> </div>
+                        <span class="space"> </span>
+                        <div class="item"> </div>
+                    </div>
+                    <div class="note">Very Good</div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
     </table>
 </page>
 </body>
